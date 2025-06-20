@@ -1,0 +1,16 @@
+{
+    "name": "max/task-tracker",
+    "description": "Task Tracker CLI",
+    "autoload": {
+        "psr-4": {
+            "TaskTracker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Litvyakov Maxim",
+            "email": "litvy-maksim@yandex.ru"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use TaskTracker\CliApplication;
+use TaskTracker\TaskRepository;
+
+require __DIR__ . '/vendor/autoload.php';
+
+try {
+    $app = new CliApplication(new TaskRepository());
+    $app->run($argv);
+} catch (Throwable $e) {
+    echo "Error: " . $e->getMessage() . "\n";
+    exit(1);
+}

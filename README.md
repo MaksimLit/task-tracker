@@ -4,11 +4,10 @@ from: https://roadmap.sh/projects/task-tracker
 
 ### Prerequisites
     PHP 8.2 or higher
-    Composer
 
 ### Installation
 1. Clone the repository:
-    git clone https://github.com/yourusername/task-tracker.git \
+    git clone https://github.com/MaksimLit/task-tracker.git \
     cd task-tracker
 
 2. Make the CLI executable: \

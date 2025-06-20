@@ -3,13 +3,16 @@
 
 declare(strict_types=1);
 
-use TaskTracker\CliApplication;
-use TaskTracker\TaskRepository;
-
-require __DIR__ . '/vendor/autoload.php';
+spl_autoload_register(function ($class) {
+    $file = __DIR__ . '/src/' . str_replace('\\', '/', $class) . '.php';
+    if (file_exists($file)) {
+        require $file;
+    }
+});
 
 try {
-    $app = new CliApplication(new TaskRepository());
+    $repository = new TaskRepository();
+    $app = new CliApplication($repository);
     $app->run($argv);
 } catch (Throwable $e) {
     echo "Error: " . $e->getMessage() . "\n";

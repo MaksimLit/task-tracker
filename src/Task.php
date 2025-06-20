@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-namespace TaskTracker;
-
-use DateTimeImmutable;
-
 final readonly class Task
 {
     public const string STATUS_TODO = 'todo';

@@ -2,12 +2,6 @@
 
 declare(strict_types=1);
 
-namespace TaskTracker;
-
-use DateTimeImmutable;
-use DateTimeInterface;
-use RuntimeException;
-
 final class TaskRepository
 {
     private const string FILE = 'tasks.json';

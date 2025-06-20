@@ -2,13 +2,6 @@
 
 declare(strict_types=1);
 
-namespace TaskTracker;
-
-use DateTime;
-use DateTimeImmutable;
-use InvalidArgumentException;
-use RuntimeException;
-
 final readonly class CliApplication
 {
     public function __construct(private TaskRepository $repository) {}
